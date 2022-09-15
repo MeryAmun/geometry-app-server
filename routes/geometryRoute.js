@@ -1,17 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const { getAllGeometricFigures, createGeometricFigure } = require('../controllers/geometryControllers')
 
-router.get('/geometry',(req, res) =>{
-
-    res.send({name:'server'})
-})
+router.get('/geometry',getAllGeometricFigures)
 
 
 
-router.post('/geometry',(req, res) =>{
-
-    res.send({name:'server'})
-})
+router.post('/geometry', createGeometricFigure)
 
 
 module.exports = router
