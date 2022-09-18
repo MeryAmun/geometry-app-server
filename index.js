@@ -24,7 +24,7 @@ app.use((req, res, next) => {
 
 app.use("/app-v1", geometryRoute);
 app.get("/", (req, res) => {
-  res.send("Hello and welcome to Memories API");
+  res.send("Hello and welcome to Geometry App API");
 });
 const baseURl = "mongodb+srv://mamba:mamba2021@transport.jlugw.mongodb.net/react-test?retryWrites=true&w=majority";
 const PORT = 7000;
