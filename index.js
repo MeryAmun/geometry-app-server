@@ -28,14 +28,15 @@ app.get("/", (req, res) => {
 });
 const baseURl = "mongodb+srv://mamba:mamba2021@transport.jlugw.mongodb.net/react-test?retryWrites=true&w=majority";
 const PORT = 7000;
+const host = '0.0.0.0'
 
 const startServer = async () => {
   try {
     await connectDb(process.env.MONGO_URL).then(() => {
       if (PORT === null || PORT === "") {
-        PORT = 7000;
+        PORT = 8000;
       }
-      app.listen(PORT, () => {
+      app.listen(PORT,host, () => {
         console.log(`Listening to ${PORT}`);
       });
     });
