@@ -26,6 +26,7 @@ app.use("/app-v1", geometryRoute);
 app.get("/", (req, res) => {
   res.send("Hello and welcome to Memories API");
 });
+const baseURl = "mongodb+srv://mamba:mamba2021@transport.jlugw.mongodb.net/react-test?retryWrites=true&w=majority";
 const PORT = 7000;
 
 const startServer = async () => {
