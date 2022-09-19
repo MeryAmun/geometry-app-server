@@ -26,7 +26,7 @@ app.use("/app-v1", geometryRoute);
 app.get("/", (req, res) => {
   res.send("Hello and welcome to Geometry App API");
 });
-const baseURl = "mongodb+srv://mamba:mamba2021@transport.jlugw.mongodb.net/react-test?retryWrites=true&w=majority";
+
 let PORT = process.env.PORT;
 const host = '0.0.0.0'
 
